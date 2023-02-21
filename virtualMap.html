@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href ="virtualmap.css">
+    <link rel="stylesheet" href="../base.css" />
+</head>
+<body style="text-align:center">
+    
+
+    <h1>Wildfire Preparedness</h1>
+    <!--code from https://github.com/webondevices/html-css-wizardry-->
+
+    <div>
+        <img src="CommunityWLocations.jpg" alt = "communitymap" usemap = "#mainmap"./>
+        <map name = "mainmap">
+            <area shape="circ" coords="150,270,30" href="#residents"/>
+            <area shape="circ" coords="163,422,30" href="#transportation"/>
+
+            <div class = "popup" id = "residents">
+                <h2>Residents</h2>
+                <img src="residentTasks.png" ./>
+                <a class="close" href="#">X</a>
+            </div>
+            
+            <div class = "popup" id = "transportation">
+                <h2>Transportation Authority</h2>
+                <img src="transportationTasks.png" ./>
+                <a class="close" href="#">X</a>
+            </div>
+
+        </map>
+    </div>
+
+    
+
+</body>
+</html>
